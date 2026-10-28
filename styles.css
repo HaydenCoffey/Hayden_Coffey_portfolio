@@ -156,3 +156,47 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* Mobile first: content and navigation stack on narrow screens. */
+body {
+  overflow-wrap: anywhere;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.content-grid > section {
+  min-width: 0;
+  margin: 0;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* At 700px, cards become two columns and navigation becomes a row. */
+@media (min-width: 700px) {
+  .content-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+/* Wide screens give the featured project more space than the skills panel. */
+@media (min-width: 1000px) {
+  .content-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 2rem;
+  }
+}
