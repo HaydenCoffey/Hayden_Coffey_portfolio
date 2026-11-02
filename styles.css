@@ -1,4 +1,4 @@
-/* Complementary blue and orange palette, with light neutral backgrounds. */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap');/* Complementary blue and orange palette, with light neutral backgrounds. */
 :root {
   --blue: #173f73;
   --orange: #f4a340;
@@ -15,7 +15,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
 }
 
@@ -58,7 +58,7 @@ main {
 
 h1, h2, h3 {
   color: var(--blue);
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', serif;
   line-height: 1.2;
 }
 
