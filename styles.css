@@ -199,4 +199,35 @@ img {
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     gap: 2rem;
   }
+}/* Consistent spacing in multiples of 8px */
+header {
+  padding: 24px max(16px, calc((100% - 1000px) / 2));
+}
+
+header > p {
+  margin-bottom: 16px;
+}
+
+main {
+  width: min(calc(100% - 32px), 1000px);
+}
+
+section {
+  padding: 24px;
+}
+
+.project-card {
+  margin-top: 24px;
+}
+
+.button {
+  padding: 16px 24px;
+}
+
+li {
+  padding-bottom: 8px;
+}
+
+footer {
+  padding: 24px 16px;
 }
